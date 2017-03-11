@@ -68,13 +68,16 @@ module.exports = function(RED) {
 
                     var payload = msg.payload;
                     if (!Buffer.isBuffer(payload)) {
+                      
                         if (typeof payload === "object") {
                             payload = JSON.stringify(payload);
                         }
                         else {
                             payload = payload.toString();
                         }
-                        payload += node.addCh;
+
+                        payload = Buffer.from(payload, 'utf-8');
+
                     }
 
                     node.xbeeAPI.parseRaw(payload);
