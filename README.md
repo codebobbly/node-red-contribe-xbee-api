@@ -1,4 +1,4 @@
-node-red-node-xbee-api
+node-red-contribe-xbee-api
 ========================
 
 <a href="http://nodered.org" target="_new">Node-RED</a> nodes to talk to
@@ -9,12 +9,12 @@ Install
 
 Run the following command in your Node-RED user directory (typically `~/.node-red`):
 
-        npm i node-red-node-xbee-api
+        npm i node-red-contribe-xbee-api
 
 For versions on node.js prior to 4.x (ie v0.10.x and v0.12.x) please install using
 
         sudo npm i -g npm@2.x
-        npm i node-red-node-xbee-api
+        npm i node-red-contribe-xbee-api
 
 During install there may be multiple messages about optional compilation.
 These may look like failures... as they report as failure to compile errors -
