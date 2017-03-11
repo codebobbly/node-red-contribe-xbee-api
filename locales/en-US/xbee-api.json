@@ -1,5 +1,5 @@
 {
-    "xbeeapi": {
+    "xbee-api": {
         "label": {
             "xbee_api": "Xbee API",
             "xbee_config": "Xbee API Config",
@@ -29,8 +29,8 @@
             "false": "false"
         },
         "errors": {
-            "missing_conf": "missing xbeeapi config",
-            "error": "xbeeapi error: __error__",
+            "missing-conf": "missing xbee-api config",
+            "error": "xbee-api error: __error__",
         }
     }
 }

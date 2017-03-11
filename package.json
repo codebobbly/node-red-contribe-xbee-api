@@ -1,6 +1,6 @@
 {
     "name"          : "node-red-contribe-xbee-api",
-    "version"       : "0.0.4",
+    "version"       : "0.0.3",
     "description"   : "Node-RED nodes to talk to xbee (API Mode)",
     "dependencies"  : {
         "xbee-api"   : "*"
@@ -14,9 +14,7 @@
     "node-red": {
         "version": ">=0.14.0",
         "nodes": {
-            "xbeeapi-in": "xbee-api-out.js",
-            "xbeeapi-out": "xbee-api-in.js",
-            "xbeeapi-config": "xbee-api-config.js"
+            "xbee-api": "xbee-api.js"
         }
     },
     "author": {
