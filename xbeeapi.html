@@ -23,9 +23,12 @@
             xbeeapiconfig: {type:"xbeeapi-config",required:true}
         },
         color:"BurlyWood",
+        paletteLabel: function() {
+            return this._("xbeeapi.label.xbeeabi_in"),
+        },
         inputs:1,
         outputs:1,
-        icon: "serial.png",
+        icon: "inject.png",
         label: function() {
             var XbeeApiConfigNode = RED.nodes.node(this.xbeeApiConfig);
             return this.name||(XbeeApiConfigNode?XbeeApiConfigNode.label().split(":")[0]:this._("xbeeapi.label.xbee_api"));
@@ -61,7 +64,10 @@
         color:"BurlyWood",
         inputs:1,
         outputs:1,
-        icon: "serial.png",
+        paletteLabel: function() {
+            return this._("xbeeapi.label.xbeeabi_out"),
+        },
+        icon: "inject.png",
         label: function() {
             var XbeeApiConfigNode = RED.nodes.node(this.xbeeApiConfig);
             return this.name||(XbeeApiConfigNode?XbeeApiConfigNode.label().split(":")[0]:this._("xbeeapi.label.xbee_api"));

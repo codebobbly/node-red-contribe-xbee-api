@@ -7,6 +7,8 @@
             "module": "Module",
             "convert_adc": "Convert ADC",
             "vref_adc": "Reference value (millivolt)",
+            "xbeeabi_in": "Xbee to Frame",
+            "xbeeabi_out": "Frame to Xbee"
         },
         "placeholder": {
             "api_mode": "1",
@@ -30,7 +32,7 @@
         },
         "errors": {
             "missing-conf": "missing xbee-api config",
-            "error": "xbee-api error: __error__",
+            "error": "xbee-api error: __error__"
         }
     }
 }
