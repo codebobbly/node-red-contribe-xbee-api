@@ -16,8 +16,8 @@ module.exports = function(RED) {
 
     function XbeeApiOutNode(n) {
         RED.nodes.createNode(this,n);
-        this.xbeeApiConfig = n.xbeeapiconfig;
-        this.xbeeApiConfigNode = RED.nodes.getNode(this.xbeeApiConfig);
+        this.xbeeapiconfig = n.xbeeapiconfig;
+        this.xbeeApiConfigNode = RED.nodes.getNode(this.xbeeapiconfig);
 
         if (this.xbeeApiConfigNode) {
             var node = this;
@@ -57,8 +57,8 @@ module.exports = function(RED) {
 
     function XbeeApiInNode(n) {
         RED.nodes.createNode(this,n);
-        this.xbeeApiConfig = n.xbeeapiconfig;
-        this.xbeeApiConfigNode = RED.nodes.getNode(this.xbeeApiConfig);
+        this.xbeeapiconfig = n.xbeeapiconfig;
+        this.xbeeApiConfigNode = RED.nodes.getNode(this.xbeeapiconfig);
 
         if (this.xbeeApiConfigNode) {
             var node = this;

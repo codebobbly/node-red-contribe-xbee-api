@@ -1,8 +1,8 @@
 
 <script type="text/x-red" data-template-name="xbee-api in">
-    <div class="form-row node-input-xbee-api-config">
-        <label for="node-input-xbee-api-config"><i class="fa fa-random"></i> <span data-i18n="xbee-api.label.xbee_config"></span></label>
-        <input type="text" id="node-input-xbee-api-config">
+    <div class="form-row node-input-xbeeapiconfig">
+        <label for="node-input-xbeeapiconfig"><i class="fa fa-random"></i> <span data-i18n="xbeeapi.label.xbee_config"></span></label>
+        <input type="text" id="node-input-xbeeapiconfig">
     </div>
     <div class="form-row">
         <label for="node-input-name"><i class="fa fa-tag"></i> <span data-i18n="node-red:common.label.name"></span></label>
@@ -37,9 +37,9 @@
 </script>
 
 <script type="text/x-red" data-template-name="xbee-api out">
-    <div class="form-row node-input-xbee-api-config">
-        <label for="node-input-xbee-api-config"><i class="fa fa-random"></i> <span data-i18n="xbee-api.label.xbee_config"></span></label>
-        <input type="text" id="node-input-xbee-api-config">
+    <div class="form-row node-input-xbeeapiconfig">
+        <label for="node-input-xbeeapiconfig"><i class="fa fa-random"></i> <span data-i18n="xbeeapi.label.xbee_config"></span></label>
+        <input type="text" id="node-input-xbeeapiconfig">
     </div>
     <div class="form-row">
         <label for="node-input-name"><i class="fa fa-tag"></i> <span data-i18n="node-red:common.label.name"></span></label>
@@ -75,28 +75,28 @@
 <script type="text/x-red" data-template-name="xbee-api-config">
     <div class="form-row">
         <table width="100%"><tr>
-            <td width="100px"><i class="fa fa-wrench"></i> <span data-i18n="xbee-api.label.settings"></span></td>
-            <td width="110px" data-i18n="xbee-api.label.api_mode"></td>
-            <td width="70px" data-i18n="xbee-api.label.module"></td>
-            <td width="80px" data-i18n="xbee-api.label.convert_adc"></td>
-            <td width="70px" data-i18n="xbee-api.label.vref_adc"></td>
+            <td width="100px"><i class="fa fa-wrench"></i> <span data-i18n="xbeeapi.label.settings"></span></td>
+            <td width="110px" data-i18n="xbeeapi.label.api_mode"></td>
+            <td width="70px" data-i18n="xbeeapi.label.module"></td>
+            <td width="80px" data-i18n="xbeeapi.label.convert_adc"></td>
+            <td width="70px" data-i18n="xbeeapi.label.vref_adc"></td>
         </tr><tr><td>&nbsp;</td>
         <td>
-            <select type="text" id="node-config-input-stopbits" style="width:70px;">
+            <select type="text" id="node-config-input-api_mode" style="width:70px;">
                 <option value="2">2</option>
                 <option value="1">1</option>
             </select>
         </td><td>
         <select type="text" id="node-config-input-module" style="width:70px;">
-            <option value="Any" data-i18n="xbee-api.modules.Any"></option>
-            <option value="802.15.4" data-i18n="xbee-api.modules.802154"></option>
-            <option value="ZNet" data-i18n="xbee-api.modules.ZNet"></option>
-            <option value="ZigBee" data-i18n="xbee-api.modules.ZigBee"></option>
+            <option value="Any" data-i18n="xbeeapi.modules.Any"></option>
+            <option value="802.15.4" data-i18n="xbeeapi.modules.802154"></option>
+            <option value="ZNet" data-i18n="xbeeapi.modules.ZNet"></option>
+            <option value="ZigBee" data-i18n="xbeeapi.modules.ZigBee"></option>
         </select>
         </td><td>
         <select type="text" id="node-config-input-convert_adc" style="width:80px;">
-            <option value="true" data-i18n="xbee-api.convert_adc.true"></option>
-            <option value="false" data-i18n="xbee-api.convert_adc.false"></option>
+            <option value="true" data-i18n="xbeeapi.convert_adc.true"></option>
+            <option value="false" data-i18n="xbeeapi.convert_adc.false"></option>
         </select>
         </td><td>
         <input type="text" id="node-config-input-xbee-api_mode" style="width:100px">
