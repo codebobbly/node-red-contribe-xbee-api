@@ -7,8 +7,8 @@
             "module": "Module",
             "convert_adc": "Convert ADC",
             "vref_adc": "Reference value (millivolt)",
-            "xbeeabi_in": "Xbee to Frame",
-            "xbeeabi_out": "Frame to Xbee"
+            "xbeeabi_in": "xbee > frame",
+            "xbeeabi_out": "frame > xbee"
         },
         "placeholder": {
             "api_mode": "1",
