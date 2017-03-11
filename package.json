@@ -14,7 +14,7 @@
     "node-red": {
         "version": ">=0.14.0",
         "nodes": {
-            "serialport": "xbee-api.js"
+            "xbee-api": "xbee-api.js"
         }
     },
     "author": {
