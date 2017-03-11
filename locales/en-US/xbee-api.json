@@ -1,0 +1,36 @@
+{
+    "xbee-api": {
+        "label": {
+            "xbee_api": "Xbee API",
+            "xbee_config": "Xbee API Config",
+            "api_mode": "API Mode",
+            "module": "Module",
+            "convert_adc": "Convert ADC",
+            "vref_adc": "Reference value (millivolt)",
+        },
+        "placeholder": {
+            "api_mode": "1",
+            "module": "Any",
+            "convert_adc": "true",
+            "vref_adc": "1200"
+        },
+        "api_modes": {
+            "1": "1",
+            "2": "2"
+        },
+        "modules": {
+            "802154": "802.15.4",
+            "ZNet": "ZNet",
+            "ZigBee": "ZigBee",
+            "Any": "Any"
+        },
+        "convert_adc": {
+            "true": "true",
+            "false": "false"
+        },
+        "errors": {
+            "missing-conf": "missing xbee-api config",
+            "error": "xbee-api error: __error__",
+        }
+    }
+}

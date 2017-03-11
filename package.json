@@ -1,0 +1,25 @@
+{
+    "name"          : "node-red-node-xbee-api",
+    "version"       : "0.0.1",
+    "description"   : "Node-RED nodes to talk to xbee (API Mode)",
+    "dependencies"  : {
+        "xbee-api"   : "*"
+    },
+    "repository" : {
+        "type":"git",
+        "url":"https://github.com/codebobbly/node-red-node-xbee-api.git"
+    },
+    "license": "MIT",
+    "keywords": [ "node-red", "xbee api" ],
+    "node-red": {
+        "version": ">=0.14.0",
+        "nodes": {
+            "serialport": "xbee-api.js"
+        }
+    },
+    "author": {
+        "name": "codebobbly",
+        "email": "codebobbly@gmail.com",
+        "url": "https://github.com/codebobbly"
+    }
+}
