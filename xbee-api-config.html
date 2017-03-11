@@ -1,0 +1,51 @@
+<script type="text/x-red" data-template-name="xbeeapi-config">
+    <div class="form-row">
+        <table width="100%"><tr>
+            <td width="100px"><i class="fa fa-wrench"></i> <span data-i18n="xbeeapi.label.settings"></span></td>
+            <td width="110px" data-i18n="xbeeapi.label.api_mode"></td>
+            <td width="70px" data-i18n="xbeeapi.label.module"></td>
+            <td width="80px" data-i18n="xbeeapi.label.convert_adc"></td>
+            <td width="70px" data-i18n="xbeeapi.label.vref_adc"></td>
+        </tr><tr><td>&nbsp;</td>
+        <td>
+            <select type="text" id="node-config-input-stopbits" style="width:70px;">
+                <option value="2">2</option>
+                <option value="1">1</option>
+            </select>
+        </td><td>
+        <select type="text" id="node-config-input-module" style="width:70px;">
+            <option value="Any" data-i18n="xbeeapi.modules.Any"></option>
+            <option value="802.15.4" data-i18n="xbeeapi.modules.802154"></option>
+            <option value="ZNet" data-i18n="xbeeapi.modules.ZNet"></option>
+            <option value="ZigBee" data-i18n="xbeeapi.modules.ZigBee"></option>
+        </select>
+        </td><td>
+        <select type="text" id="node-config-input-convert_adc" style="width:80px;">
+            <option value="true" data-i18n="xbeeapi.convert_adc.true"></option>
+            <option value="false" data-i18n="xbeeapi.convert_adc.false"></option>
+        </select>
+        </td><td>
+        <input type="text" id="node-config-input-xbeeapi_mode" style="width:100px">
+    </td>
+    </tr></table></div>
+    <div class="form-row">
+        <label for="node-input-name"><i class="fa fa-tag"></i> <span data-i18n="node-red:common.label.name"></span></label>
+        <input type="text" id="node-input-name" data-i18n="[placeholder]node-red:common.label.name">
+    </div>
+</script>
+
+<script type="text/javascript">
+    RED.nodes.registerType('xbeeapi-config',{
+        category: 'config',
+        defaults: {
+            //name: {value:""},
+            api_mode: {value:"1",required:true},
+            module: {value:"Any",required:true},
+            convert_adc: {value:"true",required:true},
+            vref_adc: {value:1200,required:true,validate:RED.validators.number()},
+        },
+        label: function() {
+            return this.name;
+        }
+    });
+</script>
