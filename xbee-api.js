@@ -95,5 +95,5 @@ module.exports = function(RED) {
         });
 
     }
-    RED.nodes.registerType("serial in",SerialInNode);
+    RED.nodes.registerType("xbee-api in",XbeeApiInNode);
 }
