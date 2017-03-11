@@ -1,5 +1,5 @@
 
-<script type="text/x-red" data-template-name="xbee-api in">
+<script type="text/x-red" data-template-name="xbeeapi in">
     <div class="form-row node-input-xbeeapiconfig">
         <label for="node-input-xbeeapiconfig"><i class="fa fa-random"></i> <span data-i18n="xbeeapi.label.xbee_config"></span></label>
         <input type="text" id="node-input-xbeeapiconfig">
@@ -10,17 +10,17 @@
     </div>
 </script>
 
-<script type="text/x-red" data-help-name="xbee-api in">
+<script type="text/x-red" data-help-name="xbeeapi in">
     <p>Reads data from msg.payload and parse them into Frames.</p>
     <p>It then outputs `msg.payload` as either a Frame Object.</p>
 </script>
 
 <script type="text/javascript">
-    RED.nodes.registerType('xbee-api in',{
+    RED.nodes.registerType('xbeeapi in',{
         category: 'function',
         defaults: {
             name: {name:""},
-            xbeeapiconfig: {type:"xbee-api-config",required:true}
+            xbeeapiconfig: {type:"xbeeapi-config",required:true}
         },
         color:"BurlyWood",
         inputs:1,
@@ -36,7 +36,7 @@
     });
 </script>
 
-<script type="text/x-red" data-template-name="xbee-api out">
+<script type="text/x-red" data-template-name="xbeeapi out">
     <div class="form-row node-input-xbeeapiconfig">
         <label for="node-input-xbeeapiconfig"><i class="fa fa-random"></i> <span data-i18n="xbeeapi.label.xbee_config"></span></label>
         <input type="text" id="node-input-xbeeapiconfig">
@@ -47,16 +47,16 @@
     </div>
 </script>
 
-<script type="text/x-red" data-help-name="xbee-api out">
+<script type="text/x-red" data-help-name="xbeeapi out">
     <p>Reads data from msg.payload as a Frame Object and parse them into msg.payload as raw.</p>
 </script>
 
 <script type="text/javascript">
-    RED.nodes.registerType('xbee-api out',{
+    RED.nodes.registerType('xbeeapi out',{
         category: 'function',
         defaults: {
             name: {name:""},
-            xbeeapiconfig: {type:"xbee-api-config",required:true}
+            xbeeapiconfig: {type:"xbeeapi-config",required:true}
         },
         color:"BurlyWood",
         inputs:1,
@@ -72,7 +72,7 @@
     });
 </script>
 
-<script type="text/x-red" data-template-name="xbee-api-config">
+<script type="text/x-red" data-template-name="xbeeapi-config">
     <div class="form-row">
         <table width="100%"><tr>
             <td width="100px"><i class="fa fa-wrench"></i> <span data-i18n="xbeeapi.label.settings"></span></td>
@@ -109,10 +109,10 @@
 </script>
 
 <script type="text/javascript">
-    RED.nodes.registerType('xbee-api-config',{
+    RED.nodes.registerType('xbeeapi-config',{
         category: 'config',
         defaults: {
-            //name: {value:""},
+            name: {value:"",required:true},
             api_mode: {value:"1",required:true},
             module: {value:"Any",required:true},
             convert_adc: {value:"true",required:true},

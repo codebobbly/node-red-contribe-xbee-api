@@ -12,7 +12,7 @@ module.exports = function(RED) {
         this.vref_adc = parseInt(n.vref_adc) || 1200;
         this.raw_frames = false;
     }
-    RED.nodes.registerType("xbee-api-config", XbeeApiConfigNode);
+    RED.nodes.registerType("xbeeapi-config", XbeeApiConfigNode);
 
     function XbeeApiOutNode(n) {
         RED.nodes.createNode(this,n);
@@ -44,7 +44,7 @@ module.exports = function(RED) {
                 }
             });
         } else {
-            this.error(RED._("xbee-api.errors.missing-conf"));
+            this.error(RED._("xbeeapi.errors.missing-conf"));
         }
 
         this.on("close", function(done) {
@@ -52,7 +52,7 @@ module.exports = function(RED) {
         });
 
     }
-    RED.nodes.registerType("xbee-api out",XbeeApiOutNode);
+    RED.nodes.registerType("xbeeapi out",XbeeApiOutNode);
 
 
     function XbeeApiInNode(n) {
@@ -87,7 +87,7 @@ module.exports = function(RED) {
             });
 
         } else {
-            this.error(RED._("xbee-api.errors.missing-conf"));
+            this.error(RED._("xbeeapi.errors.missing-conf"));
         }
 
         this.on("close", function(done) {
@@ -95,5 +95,5 @@ module.exports = function(RED) {
         });
 
     }
-    RED.nodes.registerType("xbee-api in",XbeeApiInNode);
+    RED.nodes.registerType("xbeeapi in",XbeeApiInNode);
 }
